@@ -1,4 +1,4 @@
-//reversing an array using another array
+//reversing an array
 
 public class Reversearr1 {
     public static void main(String[]args){

@@ -1,3 +1,4 @@
+package DSA;
 
 public class choDistribution1 {
     public static void main(String[]args){

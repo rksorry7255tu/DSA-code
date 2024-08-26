@@ -15,7 +15,7 @@ public class nextpermutation {
         if (index == -1) {
             // Array.sort(nums);
             for (int i = 0; i < nums.length; i++) {
-                int small = i;
+                
                 for (int j = i + 1; j < nums.length; j++) {
                     if (nums[i] > nums[j]) {
                         temp = nums[i];
@@ -37,7 +37,7 @@ public class nextpermutation {
          index=index+1;
          //System.out.println(index);
             for(int i=index;i<nums.length;i++){
-                int small=i;
+               
                 for(int j=i+1;j<nums.length;j++){
                     if(nums[i]>nums[j]){
                         temp=nums[i];

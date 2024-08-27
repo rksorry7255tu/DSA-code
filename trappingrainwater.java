@@ -12,51 +12,45 @@
  
 public class trappingrainwater {
     public static void main(String[]args){
-         //int height[]={4,2,0,3,2,5};
-        int height[]={0,1,0,2,1,0,1,3,2,1,2,1};
-        int small=height[0];
-        int large=height[0];
-        int largeindex=0;
-        int smallindex=0;
-        int trap=0;
-        
+        // int height[]={4,2,0,3,2,5};
+         int height[] = {0,1,0,2,1,0,1,3,2,1,2,1};
+         int trap=0;
+        int left[]=new int [height.length];
+        int right[]=new int [height.length];
+        left[0]=height[0];
+        for(int i=1;i<height.length;i++){
+            if(height[i]>left[i-1]){
+                left[i]=height[i];
+            }else{
+                left[i]=left[i-1];
+            }
+        }
+        right[height.length-1]=height[height.length-1];
+        for(int i=height.length-1;i>=1;i--){
+            if(height[i-1]>=right[i]){
+                right[i-1]=height[i-1];
+            }else{
+                right[i-1]=right[i];
+            }
+        }
         for(int i=0;i<height.length;i++){
-            if(height[i]>large){
-                large=height[i];
-                largeindex=i;
-                //System.out.println(large);  
+            if(left[i]<right[i]){
+                trap=left[i]-height[i]+trap;
             }
-            if(height[i]>small){
-                if (height[i]<large){
-                    small=height[i];
-                    smallindex=i;
-                }
-            } 
-        }
-         if(small==height[0]){
-        for(int i=smallindex;i<largeindex;i++){
-            if((smallindex+i+1)<largeindex){
-                trap=height[smallindex]-height[smallindex+i+1]+trap;
-                
+            if(right[i]<=left[i]){
+                trap=right[i]-height[i]+trap;
             }
+            
            
-         }
-        System.out.println(trap);
-    }else{
-        int size=height.length-1;
-        for(int i=0;i<height.length/2;i++){
-            trap=height[size]-height[i]+trap;
-            size--;
         }
-        System.out.println(trap);
-    }
-   
-
-
-
-        //  System.out.println(large);
-        // System.out.println(largeindex);
-        // System.out.println(small);
-        // System.out.println(smallindex);
+        System.out.print(trap+" ");
+    //    System.out.println();
+    //     for(int i=0;i<height.length;i++){
+    //         System.out.print(left[i]+" ");
+    //     }
+    //     System.out.println();
+    //     for(int i=0;i<height.length;i++){
+    //         System.out.print(right[i]+" ");
+    //     }
     }
 }

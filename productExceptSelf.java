@@ -28,9 +28,12 @@ public class productExceptSelf {
              //System.out.println(product);
              product = 1;
         }
+      
         for(int i=0;i<answers.length;i++){
             System.out.println(answers[i]);
         }
+
+     
        
     }
 }

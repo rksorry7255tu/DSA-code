@@ -1,6 +1,6 @@
 import java.lang.Character.Subset;
 import java.util.*;
-class main2{
+public class string1{
     public static void main(String []args){
         Scanner sc=new Scanner(System.in);
         String name="Ravi";
@@ -31,22 +31,22 @@ class main2{
         //s1=s2 : 0
         //s1<s2 : -ve value
 
-        System.out.println(name1==name2);
-        String a1=new String(name1);
-        String a2=new String(name1);
-        if(a1==a2){
-            System.out.println("equal");
-        }else{
-            System.out.println("not equal");
-        }
+        // System.out.println(name1==name2);
+        // String a1=new String(name1);
+        // String a2=new String(name1);
+        // if(a1==a2){
+        //     System.out.println("equal");
+        // }else{
+        //     System.out.println("not equal");
+        // }
 
-        //substring of a string
-        String sentence="I am a Ravi Kumar";
-        System.out.println(sentence.substring(0,3));
-        System.out.println(sentence.substring(3));
+        // //substring of a string
+        // String sentence="I am a Ravi Kumar";
+        // System.out.println(sentence.substring(0,3));
+        // System.out.println(sentence.substring(3));
 
-        //strings are immutable
-         sentence="I am a Ravi ";
-        System.out.println(sentence);
+        // //strings are immutable
+        //  sentence="I am a Ravi ";
+        // System.out.println(sentence);
     }
 }

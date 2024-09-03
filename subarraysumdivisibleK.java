@@ -14,7 +14,7 @@ public class subarraysumdivisibleK {
     public static void main(String[] args) {
         // The array elements
         int arr[] = {-2, 2, -5, 12, -11, -1, 7};
-        int k1=3;
+        //int k1=3;
         int sum=0;
         int index=0;
         int largeindex=0;

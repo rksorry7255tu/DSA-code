@@ -18,26 +18,15 @@
 
 public class Bit {
     public static void main(String[]args){
-       int a=60;int b=95;
-       int c=5;
-       int size=b-a;
-       int []bits=new int[size+1];
-       int []no=new int[size+1];
+       //int a=60;int b=95;
+       int a=2;int b=10;
+      
 
-       for(int i=a;i<b+1;i++){
+       for(int i=a;i<=b;i++){
         if(i%2==0||i%5==0){
-            bits[i-a]=1;
-            no[i-a]=i;
+            System.out.print(i+" ");
         }
        }
-       for(int i=0;i<size+1;i++){
-        if(no[i]!=0){
-            System.out.print(no[i]+" ");
-        }
-        
-       }
-       
-    
     }
     
 }

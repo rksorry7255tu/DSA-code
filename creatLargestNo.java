@@ -11,14 +11,13 @@
 // Explanation: Given numbers are {“54”, “546”, “548”, “60”}, the arrangement “6054854654” gives the largest value.
 
 import java.util.*;
-import java.util.Comparator;
 
 public class creatLargestNo {
     public static void main(String[]args){
         String[] arr1 = {"3","30","34","5","9"};
 
 
-         Comparator<String> myCompare= (X,Y)-> (Y+X).compareTo(X+Y);
+         Comparator<String> myCompare= (X,Y) -> (Y+X).compareTo(X+Y);
         
           Arrays.sort(arr1, myCompare);
 

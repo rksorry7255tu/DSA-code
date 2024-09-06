@@ -12,7 +12,7 @@ public class subarrSum {
                 if(sum==k){
                     noSubarr++;
                 }
-                System.out.println(sum);
+               
             }
         }
         System.out.println(noSubarr);

@@ -12,3 +12,4 @@ public class recursion2 {
         printno(n+1);
     }
 }
+

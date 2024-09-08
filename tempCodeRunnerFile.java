@@ -1,4 +1,3 @@
-   // for(int j=k+5;j<nums.length;j++){
-        //    res[i]=nums[j];
-        //    i++;
-        // }
+ // if(l==nums.length-1 || i==nums.length-4){
+                        //     break;
+                        // }

@@ -1,6 +1,5 @@
- // Scanner sc=new Scanner(System.in);
-        // String s1="Ravi";
-        // String fullname="Ravi Kumar";
-        // String s2=sc.nextLine();
-        // System.out.println(s2+" "+s1);
-
+   for(int i=0;i<s.length()-1;i++){
+            if(arr[i]!=arr[i+1]){
+                str=str+s.charAt(arr[i+1]);
+            }
+          }

@@ -1,3 +1,18 @@
+// Convert a sentence into its equivalent mobile numeric keypad sequence
+// Last Updated : 18 Jan, 2024
+// Given a sentence in the form of a string, convert it into its equivalent mobile numeric keypad sequence. 
+
+// Mobile-keypad
+
+// Examples : 
+
+// Input: GEEKSFORGEEKS
+// Output: 4333355777733366677743333557777
+// Explanation: For obtaining a number, we need to press a number corresponding to that character for a number of times equal to the position of the character. For example, for character E, press number 3 two times and accordingly.
+
+// Input : HELLO WORLD
+// Output : 4433555555666096667775553
+
 public class printSequence {
     public static void main(String[] args) {
         String S="WTXNP";
@@ -76,8 +91,8 @@ public class printSequence {
                 }else if(S.charAt(i)=='Z'){
                     res1="9999";
                 }
-            }else if(S.charAt(i)==' '){
-                res[i]=0;
+             }else if(S.charAt(i)==' '){
+               
                 res1="0";
             }
             System.out.print(res1);

@@ -1,5 +1,5 @@
-   for(int i=0;i<s.length()-1;i++){
-            if(arr[i]!=arr[i+1]){
-                str=str+s.charAt(arr[i+1]);
-            }
-          }
+ // else if(str1.charAt(i-1)==str1.charAt(i)){
+        //     // //count++;
+        //     // System.out.println(str1.charAt(i-1)+" "+ count);
+        //     // count=0;
+        // }

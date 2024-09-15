@@ -1,7 +1,7 @@
 //union of 2 arrays
 // int arr1[]={7,3,9};
 // int arr2[]={6,3,9,2,9,4};
-// union={7,3,9,6,2,4}
+// union=
 //out-6
 
 import java.util.*;

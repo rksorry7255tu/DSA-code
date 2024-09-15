@@ -35,6 +35,12 @@ public class hashMap {
             System.out.println(e.getKey());
             System.out.println(e.getValue());
         }
+        System.out.println(map.keySet());
+        System.out.println(map.entrySet());
+        System.out.println(map.values());
+        System.out.println(map.get("India"));
+        map.put("Ravi",12);
+        System.out.println(map.containsKey("Ravi"));
     }
-    
+
 }

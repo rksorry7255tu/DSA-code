@@ -1,3 +1,5 @@
+//find the maximum subarray length whose sum is <=14;
+
 public class fixedlengthSlidingWindow {
     public static void main(String[] args) {
         int arr[] = { 2,5,1,7,10 };
@@ -14,7 +16,5 @@ public class fixedlengthSlidingWindow {
             }
         }
         System.out.println(maxlength);
-      
-
     }
 }

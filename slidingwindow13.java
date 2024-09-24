@@ -3,7 +3,7 @@
 import java.util.*;
 public class slidingwindow13 {
     public static void main(String[] args) {
-        int arr[]={1,0,1,0,1};
+        int arr[]={1,0,1,0,1,1};
         int goal=2;
        int result=noofoccurance(arr,goal)-noofoccurance(arr,goal-1);
         System.out.println(result);
@@ -15,7 +15,7 @@ public class slidingwindow13 {
         int count1=0;
         while(r<arr.length){
             sum=sum+arr[r];
-            while(sum>goal){
+            if(sum>goal){
                 sum=sum-arr[l];
                 l++;  
             }

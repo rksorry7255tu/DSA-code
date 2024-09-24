@@ -1,10 +1,10 @@
-//Binary Subarray with sum
+//Binary Subarray with sum=2
 
 import java.util.*;
 
 public class slidingwindow12 {
     public static void main(String[] args) {
-        int arr[]={1,0,1,0,1};
+        int arr[]={1,0,1,0,1,1};
         int goal=2;
         int sum=0;
         int noofsubarray=0;

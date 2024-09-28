@@ -1,6 +1,7 @@
 public class nextpermutation {
     public static void main(String[] args) {
-        int nums[] = {2,3,1};
+        int nums[] = {1,2,3};
+        //int nums[]={1, 2, 4, 3, 5, 6};
         int index = -1;
         int temp;
         for (int i = nums.length - 2; i >= 0; i--) {

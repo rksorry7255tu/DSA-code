@@ -4,18 +4,16 @@ import java.util.*;
 
 public class secondlargestelementofanarrwithoutsort {
     public static void main(String[] args) {
-        int arr[]={1,2,3,7,5,6,4,3,9};
+        int arr[]={1,2,4,7,7,5};
         int large=arr[0];
         int secondlarge=arr[0];
         for(int i=0;i<arr.length;i++){
-
-           if(large<arr[i]){
-                
-                secondlarge=large;
-                large=arr[i];
-           }
-
+            large=Math.max(large,arr[i]);
+            if(arr[i]>secondlarge&&arr[i]<large){
+                secondlarge=arr[i];
+            }
         }
+       
         System.out.println(large);
         System.out.println(secondlarge);
     }

@@ -1,3 +1,5 @@
+//reversing the arr with recursion
+
 public class recursion10 {
     public static void main(String[] args) {
         int []arr={1,2,3,4,5,8};

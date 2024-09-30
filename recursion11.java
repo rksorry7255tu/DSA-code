@@ -1,3 +1,5 @@
+//palindrom question
+
 public class recursion11 {
     public static void main(String[] args) {
         String s="rar";
